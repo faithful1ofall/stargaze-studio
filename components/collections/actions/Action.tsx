@@ -553,7 +553,7 @@ export const CollectionActions = ({
                       </div>
                       <input
                         checked={decrement}
-                        className={`toggle ${decrement ? `bg-stargaze` : `bg-gray-600`}`}
+                        className={`toggle ${decrement ? `bg-miniutopia` : `bg-gray-600`}`}
                         onClick={() => setDecrement(!decrement)}
                         type="checkbox"
                       />
@@ -699,7 +699,7 @@ export const CollectionActions = ({
                   <span className="mr-4 font-bold">Metadata files with .json extensions?</span>
                   <input
                     checked={jsonExtensions}
-                    className={`toggle ${jsonExtensions ? `bg-stargaze` : `bg-gray-600`}`}
+                    className={`toggle ${jsonExtensions ? `bg-miniutopia` : `bg-gray-600`}`}
                     onClick={() => setJsonExtensions(!jsonExtensions)}
                     type="checkbox"
                   />

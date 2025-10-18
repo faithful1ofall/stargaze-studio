@@ -1,0 +1,13 @@
+{
+  "network": "planq-atlas-testnet",
+  "chainId": 7077,
+  "rpcUrl": "https://evm-rpc-atlas.planq.network",
+  "explorer": "https://evm.planq.network",
+  "contracts": {
+    "NFTFactory": "Deploy using: node scripts/deploy.js",
+    "RoyaltyRegistry": "Deploy using: node scripts/deploy.js",
+    "BadgeHub": "Deploy using: node scripts/deploy.js",
+    "WhitelistMerkle": "Deploy using: node scripts/deploy.js"
+  },
+  "note": "Contracts are compiled and ready to deploy. Run 'node scripts/deploy.js' to deploy to Planq Atlas testnet."
+}

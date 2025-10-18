@@ -96,7 +96,7 @@ export function MemberAttribute({
 
       <div className="flex justify-end items-end pb-2 w-8">
         <button
-          className="flex justify-center items-center p-2 bg-stargaze-80 hover:bg-plumbus-60 rounded-full"
+          className="flex justify-center items-center p-2 bg-miniutopia-80 hover:bg-plumbus-60 rounded-full"
           onClick={(e) => {
             e.preventDefault()
             isLast ? onAdd() : onRemove(id)

@@ -65,7 +65,7 @@ export const AssetsPreview = ({ assetFilesArray, updateMetadataFileIndex }: Asse
           <div
             className={clsx(
               'flex absolute right-20 bottom-20 justify-center items-center',
-              'text-sm  text-white bg-stargaze rounded-full',
+              'text-sm  text-white bg-miniutopia rounded-full',
               getOverlaySize(),
             )}
           >

@@ -279,7 +279,7 @@ export const CollectionDetails = ({
                       </div>
                       <input
                         checked={updatable}
-                        className={`toggle ${updatable ? `bg-stargaze` : `bg-gray-600`}`}
+                        className={`toggle ${updatable ? `bg-miniutopia` : `bg-gray-600`}`}
                         onClick={() => setUpdatable(!updatable)}
                         type="checkbox"
                       />
@@ -408,7 +408,7 @@ export const CollectionDetails = ({
                   </div>
                   <input
                     checked={updatable}
-                    className={`toggle ${updatable ? `bg-stargaze` : `bg-gray-600`}`}
+                    className={`toggle ${updatable ? `bg-miniutopia` : `bg-gray-600`}`}
                     onClick={() => setUpdatable(!updatable)}
                     type="checkbox"
                   />

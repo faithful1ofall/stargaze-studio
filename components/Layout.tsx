@@ -23,7 +23,7 @@ export const Layout = ({ children, metadata = {} }: LayoutProps) => {
       <DefaultAppSeo />
 
       {/* plumbus confetti */}
-      {/* <div className="fixed inset-0 -z-10 pointer-events-none stargaze-gradient-bg opacity-50">
+      {/* <div className="fixed inset-0 -z-10 pointer-events-none miniutopia-gradient-bg opacity-50">
         <img alt="plumbus carina-nebula" className="fixed top-0 right-0 w-full h-[calc(100vh+180px)]" src="/carina-nebula.png" />
       </div> */}
 
@@ -43,14 +43,18 @@ export const Layout = ({ children, metadata = {} }: LayoutProps) => {
         {/* <Issuebar /> */}
       </div>
 
-      <div className="flex flex-col justify-center items-center p-8 space-y-4 h-screen text-center bg-black/50 sm:hidden">
-        <FaDesktop size={48} />
-        <h1 className="text-2xl font-bold">Unsupported Viewport</h1>
-        <p>
-          Stargaze Studio is best viewed on the big screen.
-          <br />
-          Please open Stargaze Studio on your tablet or desktop browser.
-        </p>
+      <div className="flex sm:hidden">
+        <Sidebar />
+        <div className="overflow-auto relative flex-grow h-screen">
+          <main
+            className={clsx('mx-auto max-w-7xl px-4', {
+              'flex flex-col justify-center items-center':
+                typeof metadata.center === 'boolean' ? metadata.center : true,
+            })}
+          >
+            {children}
+          </main>
+        </div>
       </div>
     </div>
   )

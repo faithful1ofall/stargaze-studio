@@ -376,7 +376,7 @@ const Tokenfactory: NextPage = () => {
         <AddressInput className="w-1/2" {...newAdminAddressState} />
       </Conditional>
       <Button
-        className="px-4 py-2 font-bold text-white bg-stargaze rounded-md"
+        className="px-4 py-2 font-bold text-white bg-miniutopia rounded-md"
         isLoading={loading}
         onClick={() => {
           void handleSendMessage()

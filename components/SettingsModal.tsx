@@ -33,7 +33,7 @@ export const SettingsModal = (props: SettingsModalProps) => {
                     <span className="mr-2 font-bold">Local</span>
                     <input
                       checked={globalSettings.timezone === 'Local'}
-                      className={`${globalSettings.timezone === 'Local' ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+                      className={`${globalSettings.timezone === 'Local' ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
                       onClick={() => {
                         setTimezone('Local' as Timezone)
                         window.localStorage.setItem('timezone', 'Local')
@@ -45,7 +45,7 @@ export const SettingsModal = (props: SettingsModalProps) => {
                     <span className="mr-2 font-bold">UTC</span>
                     <input
                       checked={globalSettings.timezone === 'UTC'}
-                      className={`${globalSettings.timezone === 'UTC' ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+                      className={`${globalSettings.timezone === 'UTC' ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
                       onClick={() => {
                         setTimezone('UTC' as Timezone)
                         window.localStorage.setItem('timezone', 'UTC')

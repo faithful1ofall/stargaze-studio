@@ -48,7 +48,7 @@ const ClearAdmin: NextPage = () => {
       <AddressInput className="w-1/2" {...contractAddressState} />
 
       <Button
-        className="px-4 py-2 font-bold text-white bg-stargaze rounded-md"
+        className="px-4 py-2 font-bold text-white bg-miniutopia rounded-md"
         isLoading={isLoading}
         onClick={async () => {
           if (!wallet.isWalletConnected) {

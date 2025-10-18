@@ -229,7 +229,7 @@ export const MintingDetails = ({
             <span className="mr-2">Time</span>
             <input
               checked={limitType === 'time_limited' || limitType === 'time_and_count_limited'}
-              className={`${limitType === 'time_limited' ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${limitType === 'time_limited' ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 if (limitType === 'time_and_count_limited') setLimitType('count_limited' as LimitType)
                 else if (limitType === 'count_limited') setLimitType('time_and_count_limited' as LimitType)
@@ -242,7 +242,7 @@ export const MintingDetails = ({
             <span className="mr-2">Token Count</span>
             <input
               checked={limitType === 'count_limited' || limitType === 'time_and_count_limited'}
-              className={`${limitType === 'count_limited' ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${limitType === 'count_limited' ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 if (limitType === 'time_and_count_limited') setLimitType('time_limited' as LimitType)
                 else if (limitType === 'time_limited') setLimitType('time_and_count_limited' as LimitType)

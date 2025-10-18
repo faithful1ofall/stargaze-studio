@@ -877,7 +877,7 @@ const WhitelistInstantiatePage: NextPage = () => {
                   <span className="mr-4 font-bold">Mutable Administrator Addresses</span>
                   <input
                     checked={adminsMutable}
-                    className={`toggle ${adminsMutable ? `bg-stargaze` : `bg-gray-600`}`}
+                    className={`toggle ${adminsMutable ? `bg-miniutopia` : `bg-gray-600`}`}
                     onClick={() => setAdminsMutable(!adminsMutable)}
                     type="checkbox"
                   />

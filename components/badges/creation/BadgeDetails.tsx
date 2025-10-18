@@ -310,7 +310,7 @@ export const BadgeDetails = ({ metadataSize, onChange, uploadMethod }: BadgeDeta
                 <span className="mr-4 font-bold">Transferrable</span>
                 <input
                   checked={transferrable}
-                  className={`toggle ${transferrable ? `bg-stargaze` : `bg-gray-600`}`}
+                  className={`toggle ${transferrable ? `bg-miniutopia` : `bg-gray-600`}`}
                   onClick={() => setTransferrable(!transferrable)}
                   type="checkbox"
                 />
@@ -318,7 +318,7 @@ export const BadgeDetails = ({ metadataSize, onChange, uploadMethod }: BadgeDeta
             </div>
             <Conditional test={managerState.value !== ''}>
               <Tooltip
-                backgroundColor="bg-stargaze"
+                backgroundColor="bg-miniutopia"
                 className="bg-yellow-600"
                 label="This is only an estimate. Be sure to check the final amount before signing the transaction."
                 placement="bottom"

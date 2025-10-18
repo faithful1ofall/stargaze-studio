@@ -63,7 +63,7 @@ const Chain: NextPage = () => {
       </div>
 
       <Button
-        className="px-4 py-2 mt-4 font-bold text-white bg-stargaze rounded-md"
+        className="px-4 py-2 mt-4 font-bold text-white bg-miniutopia rounded-md"
         isLoading={isLoading}
         onClick={() => {
           setIsLoading(true)

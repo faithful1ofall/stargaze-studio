@@ -71,7 +71,7 @@ const Holders: NextPage = () => {
             <span className="mr-2 font-bold">Include tokens listed on Marketplace</span>
             <input
               checked={includeListed}
-              className={`${includeListed ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${includeListed ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 setIncludeListed(!includeListed)
               }}
@@ -82,7 +82,7 @@ const Holders: NextPage = () => {
             <span className="mr-2 font-bold">Include tokens staked on DAOs</span>
             <input
               checked={includeStaked}
-              className={`${includeStaked ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${includeStaked ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 setIncludeStaked(!includeStaked)
               }}
@@ -93,7 +93,7 @@ const Holders: NextPage = () => {
             <span className="mr-2 font-bold">Include tokens in Infinity Pools</span>
             <input
               checked={includeInPool}
-              className={`${includeInPool ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${includeInPool ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 setIncludeInPool(!includeInPool)
               }}
@@ -104,7 +104,7 @@ const Holders: NextPage = () => {
             <span className="mr-2 font-bold">Export by Token ID</span>
             <input
               checked={exportIndividualTokens}
-              className={`${exportIndividualTokens ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+              className={`${exportIndividualTokens ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
               onClick={() => {
                 setExportIndividualTokens(!exportIndividualTokens)
               }}
@@ -120,7 +120,7 @@ const Holders: NextPage = () => {
               <span className="mr-2 font-bold">Include Mad Scientists holders on Osmosis</span>
               <input
                 checked={includeOsmosisHolders}
-                className={`${includeOsmosisHolders ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+                className={`${includeOsmosisHolders ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
                 onClick={() => {
                   setIncludeOsmosisHolders(!includeOsmosisHolders)
                 }}
@@ -138,7 +138,7 @@ const Holders: NextPage = () => {
       </div>
 
       <Button
-        className="px-4 py-2 font-bold text-white bg-stargaze rounded-md"
+        className="px-4 py-2 font-bold text-white bg-miniutopia rounded-md"
         isLoading={isLoading}
         onClick={() => {
           if (collectionAddressState.value.length === 0) {

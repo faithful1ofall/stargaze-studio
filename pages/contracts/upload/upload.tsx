@@ -221,7 +221,7 @@ const UploadContract: NextPage = () => {
         <label className="justify-start ml-6 cursor-pointer label">
           <input
             checked={isAuthzUpload}
-            className={`${isAuthzUpload ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+            className={`${isAuthzUpload ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
             onClick={() => {
               setIsAuthzUpload(!isAuthzUpload)
             }}

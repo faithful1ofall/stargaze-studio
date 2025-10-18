@@ -131,7 +131,7 @@ export function SelectCollectionItem({
 
       <div className="flex py-2 mt-8 w-8 h-12">
         <button
-          className="flex justify-center items-center p-3 mb-1 bg-stargaze-80 hover:bg-plumbus-60 rounded-full"
+          className="flex justify-center items-center p-3 mb-1 bg-miniutopia-80 hover:bg-plumbus-60 rounded-full"
           onClick={(e) => {
             e.preventDefault()
             isLast ? onAdd() : onRemove(id)

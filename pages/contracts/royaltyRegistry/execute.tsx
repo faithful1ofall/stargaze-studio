@@ -217,7 +217,7 @@ const RoyaltyRegistryExecutePage: NextPage = () => {
                   </div>
                   <input
                     checked={decrement}
-                    className={`toggle ${decrement ? `bg-stargaze` : `bg-gray-600`}`}
+                    className={`toggle ${decrement ? `bg-miniutopia` : `bg-gray-600`}`}
                     onClick={() => setDecrement(!decrement)}
                     type="checkbox"
                   />

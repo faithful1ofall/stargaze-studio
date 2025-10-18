@@ -170,7 +170,7 @@ const CollectionQueriesPage: NextPage = () => {
         <AddressInput {...minterContractState} />
       </div>
       <div className="flex flex-row">
-        <div className="flex flex-col mr-20 w-4/5 text-xl border border-stargaze">
+        <div className="flex flex-col mr-20 w-4/5 text-xl border border-miniutopia">
           <div className="flex flex-row mt-2 w-full text-center">
             <div className="w-1/3">Total</div>
             <div className="w-1/3">Done</div>

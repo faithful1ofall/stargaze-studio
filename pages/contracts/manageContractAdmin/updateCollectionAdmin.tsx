@@ -87,7 +87,7 @@ const UpdateCollectionAdmin: NextPage = () => {
       <AddressInput className="w-1/2" {...newAdminAddressState} />
 
       <Button
-        className="px-4 py-2 font-bold text-white bg-stargaze rounded-md"
+        className="px-4 py-2 font-bold text-white bg-miniutopia rounded-md"
         isLoading={isLoading}
         onClick={async () => {
           try {

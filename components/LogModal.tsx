@@ -140,7 +140,7 @@ export const LogModal = (props: LogModalProps) => {
                 }}
               >
                 <label
-                  className="w-full h-full text-white bg-stargaze hover:bg-stargaze/80 rounded border-0 btn modal-button"
+                  className="w-full h-full text-white bg-miniutopia hover:bg-miniutopia/80 rounded border-0 btn modal-button"
                   htmlFor="my-modal-8"
                 >
                   Download

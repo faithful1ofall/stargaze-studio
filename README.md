@@ -1,11 +1,10 @@
 <!-- markdownlint-disable MD033 MD034 MD036 MD041 -->
 
-![stargaze-studio](./public/social.png)
+![miniutopia-hub](./public/social.png)
 
-# stargaze-studio
+# Miniutopia Hub
 
-- [Mainnet](https://studio.stargaze.zone/)
-- [Testnet](https://studio.publicawesome.dev/)
+A decentralized NFT studio and marketplace platform built on EVM chains.
 
 ## Prerequisites
 
@@ -14,7 +13,7 @@
 - Git
 - Node.js 14 or LTS
 - Yarn
-- Keplr Wallet browser extension
+- MetaMask or compatible EVM wallet
 
 **Optional**
 
@@ -24,8 +23,8 @@
 
 ```sh
 # clone repository
-git clone https://github.com/public-awesome/stargaze-studio.git
-cd stargaze-studio
+git clone https://github.com/faithful1ofall/miniutopia-hub.git
+cd miniutopia-hub
 
 # install dependencies
 yarn install
@@ -40,14 +39,17 @@ yarn dev
 yarn lint
 ```
 
-## References
+## Supported Networks
 
-- https://docs.stargaze.zone/guides/stargaze-studio
+- Planq Atlas Testnet (Chain ID: 7077)
 
-## Questions
+## Features
 
-- [Discord](https://discord.gg/stargaze)
-- [Telegram](https://t.me/joinchat/ZQ95YmIn3AI0ODFh)
-- [Twitter](https://twitter.com/stargazezone)
+- NFT Collection Creation & Management
+- Minting Platform
+- Whitelist Management
+- Royalty Registry
+- Token Splits
+- Badge System
 
 <img src="./public/icon.png" height="96" align="right" />

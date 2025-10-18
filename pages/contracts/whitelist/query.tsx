@@ -415,7 +415,7 @@ const WhitelistQueryPage: NextPage = () => {
             <TextInput {...startAfter} />
             <NumberInput {...limit} />
             <Button
-              className="py-2 px-4 font-bold text-white/90 bg-stargaze hover:bg-stargaze-80 rounded"
+              className="py-2 px-4 font-bold text-white/90 bg-miniutopia hover:bg-miniutopia-80 rounded"
               isLoading={exporting}
               onClick={exportAllMembers}
               type="button"

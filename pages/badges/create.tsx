@@ -463,7 +463,7 @@ const BadgeCreationPage: NextPage = () => {
                   Transaction Hash: {'  '}
                   <Conditional test={NETWORK === 'testnet'}>
                     <Anchor
-                      className="text-stargaze hover:underline"
+                      className="text-miniutopia hover:underline"
                       external
                       href={`${BLOCK_EXPLORER_URL}/tx/${transactionHash as string}`}
                     >
@@ -472,7 +472,7 @@ const BadgeCreationPage: NextPage = () => {
                   </Conditional>
                   <Conditional test={NETWORK === 'mainnet'}>
                     <Anchor
-                      className="text-stargaze hover:underline"
+                      className="text-miniutopia hover:underline"
                       external
                       href={`${BLOCK_EXPLORER_URL}/txs/${transactionHash as string}`}
                     >
@@ -485,7 +485,7 @@ const BadgeCreationPage: NextPage = () => {
                       <span>
                         You may click{' '}
                         <Anchor
-                          className="text-stargaze hover:underline"
+                          className="text-miniutopia hover:underline"
                           external
                           href={`${
                             NETWORK === 'testnet' ? 'https://badges.publicawesome.dev' : 'https://badges.stargaze.zone'
@@ -515,7 +515,7 @@ const BadgeCreationPage: NextPage = () => {
                 Transaction Hash: {'  '}
                 <Conditional test={NETWORK === 'testnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/tx/${transactionHash as string}`}
                   >
@@ -524,7 +524,7 @@ const BadgeCreationPage: NextPage = () => {
                 </Conditional>
                 <Conditional test={NETWORK === 'mainnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/txs/${transactionHash as string}`}
                   >
@@ -547,7 +547,7 @@ const BadgeCreationPage: NextPage = () => {
                     <span>
                       You may click{' '}
                       <Anchor
-                        className="text-stargaze hover:underline"
+                        className="text-miniutopia hover:underline"
                         external
                         href={`/badges/actions/?badgeHubContractAddress=${BADGE_HUB_ADDRESS}&badgeId=${
                           badgeId as string
@@ -574,7 +574,7 @@ const BadgeCreationPage: NextPage = () => {
                 Transaction Hash: {'  '}
                 <Conditional test={NETWORK === 'testnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/tx/${transactionHash as string}`}
                   >
@@ -583,7 +583,7 @@ const BadgeCreationPage: NextPage = () => {
                 </Conditional>
                 <Conditional test={NETWORK === 'mainnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/txs/${transactionHash as string}`}
                   >
@@ -596,7 +596,7 @@ const BadgeCreationPage: NextPage = () => {
                     <span>
                       You may click{' '}
                       <Anchor
-                        className="text-stargaze hover:underline"
+                        className="text-miniutopia hover:underline"
                         external
                         href={`/badges/actions/?badgeHubContractAddress=${BADGE_HUB_ADDRESS}&badgeId=${
                           badgeId as string
@@ -626,8 +626,8 @@ const BadgeCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              mintRule === 'by_key' ? 'border-stargaze' : 'border-transparent',
-              mintRule !== 'by_key' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              mintRule === 'by_key' ? 'border-miniutopia' : 'border-transparent',
+              mintRule !== 'by_key' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
             )}
           >
             <Tooltip
@@ -656,8 +656,8 @@ const BadgeCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              mintRule === 'by_keys' ? 'border-stargaze' : 'border-transparent',
-              mintRule !== 'by_keys' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              mintRule === 'by_keys' ? 'border-miniutopia' : 'border-transparent',
+              mintRule !== 'by_keys' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
             )}
           >
             <Tooltip
@@ -686,8 +686,8 @@ const BadgeCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              mintRule === 'by_minter' ? 'border-stargaze' : 'border-transparent',
-              mintRule !== 'by_minter' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              mintRule === 'by_minter' ? 'border-miniutopia' : 'border-transparent',
+              mintRule !== 'by_minter' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
             )}
           >
             <Tooltip

@@ -416,7 +416,7 @@ export const ImageUploadDetails = ({ onChange, mintRule }: ImageUploadDetailsPro
                       <TextInput {...web3StorageEmailState} className="w-[53%]" disabled={web3StorageLoginSuccessful} />
                       <Button
                         className={`mt-8 ml-2 h-[55%] ${
-                          web3StorageLoginSuccessful ? 'bg-blue-500 opacity-80 hover:bg-blue-600 ' : 'bg-stargaze'
+                          web3StorageLoginSuccessful ? 'bg-blue-500 opacity-80 hover:bg-blue-600 ' : 'bg-miniutopia'
                         }`}
                         disabled={web3StorageLoginSuccessful}
                         isLoading={web3StorageLoginInProgress}

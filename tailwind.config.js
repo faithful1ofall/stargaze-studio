@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        stargaze: { DEFAULT: '#DB2676', 80: '#C81F71' },
+        miniutopia: { DEFAULT: '#2563EB', 80: '#1D4ED8' },
         dark: { DEFAULT: '#06090B' },
         gray: { DEFAULT: '#A9A9A9' },
         'dark-gray': { DEFAULT: '#191D20' },
@@ -20,22 +20,22 @@ module.exports = {
 
         neutral: colors.neutral,
         plumbus: {
-          DEFAULT: '#DB2676',
-          light: '#AF1F5F',
-          matte: '#5D89E9',
-          dark: '#FFC900',
-          10: '#FFF0ED',
-          20: '#5D89E9',
-          30: '#F5A7A2',
-          40: '#DB2676',
-          50: '#DB2676',
-          60: '#DB2676',
-          70: '#AB5152',
-          80: '#944144',
-          90: '#7D3136',
-          100: '#662027',
-          110: '#4F1019',
-          120: '#38000B',
+          DEFAULT: '#2563EB',
+          light: '#3B82F6',
+          matte: '#60A5FA',
+          dark: '#1E40AF',
+          10: '#EFF6FF',
+          20: '#DBEAFE',
+          30: '#BFDBFE',
+          40: '#93C5FD',
+          50: '#60A5FA',
+          60: '#3B82F6',
+          70: '#2563EB',
+          80: '#1D4ED8',
+          90: '#1E40AF',
+          100: '#1E3A8A',
+          110: '#172554',
+          120: '#0F172A',
         },
         twitter: { DEFAULT: '#1DA1F2' },
       },
@@ -61,11 +61,11 @@ module.exports = {
     // custom gradient background
     plugin(({ addUtilities }) => {
       addUtilities({
-        '.stargaze-gradient-bg': {
-          background: `linear-gradient(64.38deg, #00027D 15.06%, #7F97D2 100.6%), #252020`,
+        '.miniutopia-gradient-bg': {
+          background: `linear-gradient(64.38deg, #1E3A8A 15.06%, #60A5FA 100.6%), #0F172A`,
         },
-        '.stargaze-gradient-brand': {
-          background: `linear-gradient(102.33deg, #FFC27D 10.96%, #7F97D2 93.51%)`,
+        '.miniutopia-gradient-brand': {
+          background: `linear-gradient(102.33deg, #3B82F6 10.96%, #60A5FA 93.51%)`,
         },
       })
     }),

@@ -126,7 +126,7 @@ const RevokeAuthorization: NextPage = () => {
       <TextInput className="w-2/5" {...granteeAddressState} />
       {/* <TextInput className="w-1/3" {...messageState} /> */}
       <Button
-        className="text-white bg-stargaze btn"
+        className="text-white bg-miniutopia btn"
         isLoading={isLoading}
         onClick={() => void revokeAuthorization(granteeAddressState.value, messageState.value)}
         type="button"

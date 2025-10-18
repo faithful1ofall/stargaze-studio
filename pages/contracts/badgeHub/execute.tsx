@@ -940,7 +940,7 @@ const BadgeHubExecutePage: NextPage = () => {
                   <span className="mr-4 font-bold">Transferrable</span>
                   <input
                     checked={transferrable}
-                    className={`toggle ${transferrable ? `bg-stargaze` : `bg-gray-600`}`}
+                    className={`toggle ${transferrable ? `bg-miniutopia` : `bg-gray-600`}`}
                     onClick={() => setTransferrable(!transferrable)}
                     type="checkbox"
                   />

@@ -1784,7 +1784,7 @@ const CollectionCreationPage: NextPage = () => {
             <div>
               Open Edition Minter Contract Address:{'  '}
               <Anchor
-                className="text-stargaze hover:underline"
+                className="text-miniutopia hover:underline"
                 external
                 href={`/contracts/openEditionMinter/query/?contractAddress=${
                   openEditionMinterCreatorData?.openEditionMinterContractAddress as string
@@ -1795,7 +1795,7 @@ const CollectionCreationPage: NextPage = () => {
               <br />
               SG721 Contract Address:{'  '}
               <Anchor
-                className="text-stargaze hover:underline"
+                className="text-miniutopia hover:underline"
                 external
                 href={`/contracts/sg721/query/?contractAddress=${
                   openEditionMinterCreatorData?.sg721ContractAddress as string
@@ -1812,7 +1812,7 @@ const CollectionCreationPage: NextPage = () => {
                 <br />
                 Whitelist Contract Address:{'  '}
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`/contracts/whitelist/query/?contractAddress=${
                     openEditionMinterCreatorData?.whitelistContractAddress as string
@@ -1825,7 +1825,7 @@ const CollectionCreationPage: NextPage = () => {
               Transaction Hash: {'  '}
               <Conditional test={NETWORK === 'testnet'}>
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`${BLOCK_EXPLORER_URL}/tx/${openEditionMinterCreatorData?.transactionHash as string}`}
                 >
@@ -1834,7 +1834,7 @@ const CollectionCreationPage: NextPage = () => {
               </Conditional>
               <Conditional test={NETWORK === 'mainnet'}>
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`${BLOCK_EXPLORER_URL}/txs/${openEditionMinterCreatorData?.transactionHash as string}`}
                 >
@@ -1861,7 +1861,7 @@ const CollectionCreationPage: NextPage = () => {
             <div>
               Token Merge Minter Contract Address:{'  '}
               <Anchor
-                className="text-stargaze hover:underline"
+                className="text-miniutopia hover:underline"
                 external
                 href={`/contracts/tokenMergeMinter/query/?contractAddress=${
                   tokenMergeMinterCreatorData?.tokenMergeMinterContractAddress as string
@@ -1872,7 +1872,7 @@ const CollectionCreationPage: NextPage = () => {
               <br />
               SG721 Contract Address:{'  '}
               <Anchor
-                className="text-stargaze hover:underline"
+                className="text-miniutopia hover:underline"
                 external
                 href={`/contracts/sg721/query/?contractAddress=${
                   tokenMergeMinterCreatorData?.sg721ContractAddress as string
@@ -1884,7 +1884,7 @@ const CollectionCreationPage: NextPage = () => {
               Transaction Hash: {'  '}
               <Conditional test={NETWORK === 'testnet'}>
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`${BLOCK_EXPLORER_URL}/tx/${tokenMergeMinterCreatorData?.transactionHash as string}`}
                 >
@@ -1893,7 +1893,7 @@ const CollectionCreationPage: NextPage = () => {
               </Conditional>
               <Conditional test={NETWORK === 'mainnet'}>
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`${BLOCK_EXPLORER_URL}/txs/${tokenMergeMinterCreatorData?.transactionHash as string}`}
                 >
@@ -1920,7 +1920,7 @@ const CollectionCreationPage: NextPage = () => {
                 {minterType === 'vending' ? 'Base Token URI: ' : 'Token URI: '}{' '}
                 {uploadDetails?.uploadMethod === 'new' && (
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`https://ipfs-gw.stargaze-apis.com/ipfs/${baseTokenUri as string}`}
                   >
@@ -1929,7 +1929,7 @@ const CollectionCreationPage: NextPage = () => {
                 )}
                 {uploadDetails?.uploadMethod === 'existing' && (
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`https://ipfs-gw.stargaze-apis.com/ipfs/${baseTokenUri?.substring(
                       baseTokenUri.lastIndexOf('ipfs://') + 7,
@@ -1943,7 +1943,7 @@ const CollectionCreationPage: NextPage = () => {
                   Transaction Hash: {'  '}
                   <Conditional test={NETWORK === 'testnet'}>
                     <Anchor
-                      className="text-stargaze hover:underline"
+                      className="text-miniutopia hover:underline"
                       external
                       href={`${BLOCK_EXPLORER_URL}/tx/${transactionHash as string}`}
                     >
@@ -1952,7 +1952,7 @@ const CollectionCreationPage: NextPage = () => {
                   </Conditional>
                   <Conditional test={NETWORK === 'mainnet'}>
                     <Anchor
-                      className="text-stargaze hover:underline"
+                      className="text-miniutopia hover:underline"
                       external
                       href={`${BLOCK_EXPLORER_URL}/txs/${transactionHash as string}`}
                     >
@@ -1962,7 +1962,7 @@ const CollectionCreationPage: NextPage = () => {
                   <br />
                   Minter Contract Address:{'  '}
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`/contracts/baseMinter/query/?contractAddress=${
                       baseMinterDetails?.existingBaseMinter as string
@@ -1973,7 +1973,7 @@ const CollectionCreationPage: NextPage = () => {
                   <br />
                   SG721 Contract Address:{'  '}
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`/contracts/sg721/query/?contractAddress=${sg721ContractAddress as string}`}
                   >
@@ -2001,7 +2001,7 @@ const CollectionCreationPage: NextPage = () => {
               <Conditional test={vendingMinterContractAddress !== null}>
                 Minter Contract Address:{'  '}
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={
                     minterType === 'vending'
@@ -2014,7 +2014,7 @@ const CollectionCreationPage: NextPage = () => {
                 <br />
                 SG721 Contract Address:{'  '}
                 <Anchor
-                  className="text-stargaze hover:underline"
+                  className="text-miniutopia hover:underline"
                   external
                   href={`/contracts/sg721/query/?contractAddress=${sg721ContractAddress as string}`}
                 >
@@ -2024,7 +2024,7 @@ const CollectionCreationPage: NextPage = () => {
                 <Conditional test={whitelistContractAddress !== null && whitelistContractAddress !== undefined}>
                   Whitelist Contract Address:{'  '}
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`/contracts/whitelist/query/?contractAddress=${whitelistContractAddress as string}`}
                   >
@@ -2035,7 +2035,7 @@ const CollectionCreationPage: NextPage = () => {
                 Transaction Hash: {'  '}
                 <Conditional test={NETWORK === 'testnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/tx/${transactionHash as string}`}
                   >
@@ -2044,7 +2044,7 @@ const CollectionCreationPage: NextPage = () => {
                 </Conditional>
                 <Conditional test={NETWORK === 'mainnet'}>
                   <Anchor
-                    className="text-stargaze hover:underline"
+                    className="text-miniutopia hover:underline"
                     external
                     href={`${BLOCK_EXPLORER_URL}/txs/${transactionHash as string}`}
                   >
@@ -2097,8 +2097,8 @@ const CollectionCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              minterType === 'vending' ? 'border-stargaze' : 'border-transparent',
-              minterType !== 'vending' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              minterType === 'vending' ? 'border-miniutopia' : 'border-transparent',
+              minterType !== 'vending' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
             )}
           >
             <button
@@ -2119,8 +2119,8 @@ const CollectionCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              minterType === 'base' ? 'border-stargaze' : 'border-transparent',
-              minterType !== 'base' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              minterType === 'base' ? 'border-miniutopia' : 'border-transparent',
+              minterType !== 'base' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
             )}
           >
             <button
@@ -2141,8 +2141,8 @@ const CollectionCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              minterType === 'openEdition' ? 'border-stargaze' : 'border-transparent',
-              minterType !== 'openEdition' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              minterType === 'openEdition' ? 'border-miniutopia' : 'border-transparent',
+              minterType !== 'openEdition' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
               OPEN_EDITION_FACTORY_ADDRESS === undefined ? 'hover:bg-zinc-500 opacity-50 hover:opacity-70' : '',
             )}
           >
@@ -2165,8 +2165,8 @@ const CollectionCreationPage: NextPage = () => {
             className={clsx(
               'isolate space-y-1 border-2',
               'first-of-type:rounded-tl-md last-of-type:rounded-tr-md',
-              minterType === 'token-merge' ? 'border-stargaze' : 'border-transparent',
-              minterType !== 'token-merge' ? 'bg-stargaze/5 hover:bg-stargaze/80' : 'hover:bg-white/5',
+              minterType === 'token-merge' ? 'border-miniutopia' : 'border-transparent',
+              minterType !== 'token-merge' ? 'bg-miniutopia/5 hover:bg-miniutopia/80' : 'hover:bg-white/5',
               TOKEN_MERGE_FACTORY_ADDRESS === undefined ? 'hover:bg-zinc-500 opacity-50 hover:opacity-70' : '',
             )}
           >
@@ -2249,7 +2249,7 @@ const CollectionCreationPage: NextPage = () => {
               <span className="mr-2 font-bold">Is this a featured collection?</span>
               <input
                 checked={isFeaturedCollection}
-                className={`${isFeaturedCollection ? `bg-stargaze` : `bg-gray-600`} checkbox`}
+                className={`${isFeaturedCollection ? `bg-miniutopia` : `bg-gray-600`} checkbox`}
                 onClick={() => {
                   setIsFeaturedCollection(!isFeaturedCollection)
                 }}
